@@ -1,0 +1,36 @@
+Lexique codage caractère spéciaux html:
+
+é    &eacute;
+ê	  &ecirc;
+è	 &egrave;
+à	 &agrave;
+â	  &acirc;
+ù	 &ugrave;
+û	  &ucirc;
+î	  &icirc;
+ô	  &ocirc;
+ç	 &ccedil;
+...    &#133;
+Â	  &Acirc;
+À	 &Agrave;
+È	 &Egrave;
+É	 &Eacute;
+Ê	  &Ecirc;
+
+espace  &nbsp;
+
+
+
+
+<!--<form id='contact' method="post" action="<?php //echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+  <p id='obj'><label for='objet'>Objet de votre message :<br>
+  <input type='text' name='objet' id='objet' tabindex='10' size='30'></label></p> 
+
+  <p id="adr"><label for="mail">Votre Adresse E-mail<br>
+  <input name="votremail" tabindex="20" size="30" type="text" id="mail" value="<?php //echo $votremail; ?>"></label></p>
+  
+  <p id="msg"><label for="message">Votre message<br>
+  <textarea tabindex="30" rows="20" cols="120" name="message" id="message"><?php //echo $message; ?></textarea>
+  </label></p>
+<?php echo //$bas_formulaire;?>
+</form> -->
