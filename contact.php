@@ -126,6 +126,67 @@
 	    $("ul.controls").tabs("div.testimonials > div");
 	});
 	</script>
+	<script language="JavaScript">
+
+		function verifSelection() {
+
+			if (document.mail_form.name.value == "") {
+				alert("Insérer votre nom !")
+				return false
+			} 
+
+			if (document.mail_form.email.value == "") {
+				alert("Insérer votre mail !")
+				return false
+			}
+
+			invalidChars = " /:,;'"
+
+			for (i=0; i < invalidChars.length; i++) {	
+				badChar = invalidChars.charAt(i)
+
+				if (document.mail_form.email.value.indexOf(badChar,0) > -1) {
+					alert("Votre adresse e-mail contient des caractères invalides. Veuillez vérifier.")
+					document.mail_form.email.focus()
+					return false
+				}
+			}
+
+			atPos = document.mail_form.email.value.indexOf("@",1)			
+			if (atPos == -1) {
+				alert('Votre adresse e-mail ne contient pas le signe "@". Veuillez vérifier.')
+				document.mail_form.email.focus()
+				return false
+			}
+
+			if (document.mail_form.email.value.indexOf("@",atPos+1) != -1) {	
+				alert('Il ne doit y avoir qu\'un signe "@". Veuillez vérifier.')
+				document.mail_form.email.focus()
+				return false
+			}
+
+			periodPos = document.mail_form.email.value.indexOf(".",atPos)
+
+			if (periodPos == -1) {					
+				alert('Vous avez oublié le point "." après le signe "@". Veuillez vérifier.')
+				document.mail_form.email.focus()
+				return false
+			}
+			
+			if (periodPos+3 > document.mail_form.email.value.length)	{		
+				alert('Il doit y avoir au moins deux caractères après le signe ".". Veuillez vérifier.')
+				document.mail_form.email.focus()
+				return false
+			}
+			
+			if (document.mail_form.message.value == "") {
+				alert("Insérer un message !")
+				return false
+			} 
+			
+		}
+
+	</script>
 	
 	</body>
 </html>
