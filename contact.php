@@ -119,13 +119,6 @@
 	    <!-- *********  Footer  ********** -->
 	    
 	    <?php include('footer.php');?>
-	         
-	<script>
-	// script for testimonial' tabs
-	$(function() {
-	    $("ul.controls").tabs("div.testimonials > div");
-	});
-	</script>
 	<script language="JavaScript">
 
 		function verifSelection() {

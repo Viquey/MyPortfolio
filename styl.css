@@ -204,7 +204,6 @@ div.cara {
 
 #header_in {
     /*width: 960px;*/
-    padding: 0px 10px 0 10px;
     height: 75px;
     margin: auto;
     position: relative;
@@ -233,8 +232,8 @@ div.cara {
 	/*background: url('img/menu_cut.jpg') no-repeat scroll right;*/
 	padding: 0; 
 	margin: 0;
+	margin: 0px auto;
     }
-
 
     #menu ul li {
 	float: left;
@@ -245,13 +244,13 @@ div.cara {
 	text-decoration: none;
 	color: #101115;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: bold;
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 29px 40px 0 40px;
 	height: 46px;
 	background-color: #fff;
-	margin: 0 2px;
+	margin: 0 2px; 
     }
     
     #menu ul li a:hover {
@@ -274,14 +273,16 @@ div.cara {
 	.menuFixed {
 	position: fixed;
 	z-index: 10;
-	margin-left: 270px;
+	/*margin-left: 270px; >> HD TV 1080p  supérieur à 1280px */
+	margin: 0px auto;
 
 	}
 
 	.menuBack {
 		font-size: 95%;
-		margin-right: 0px;
-		margin-left: 270px;
+		/*margin-right: 0px;
+		margin-left: 270px;  >> HD TV 1080p  supérieur à 1280px */
+		margin: 0px auto;
 	}
 
 	
@@ -308,8 +309,7 @@ div.cara {
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 10px 40px 10px 40px;
-	background-color: #fff;
-	margin: 0 20px;
+	margin: 0 20px; 
 	}
 
 	.elemFixed #menu ul li a.active {
@@ -322,7 +322,13 @@ div.cara {
 
 	.elemFixed #logo {
 		display: none;
+		
 	}
+
+	#logo {
+		margin-left: 8px;
+	}
+
 
 
 

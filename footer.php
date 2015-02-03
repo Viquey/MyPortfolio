@@ -12,3 +12,21 @@
         
 </div>
 
+<script>
+	$(window).bind('scroll', function() {
+		if(!$('#header').hasClass("elemFixed") && ($(window).scrollTop() > 40)) {
+			$('#header').removeClass("elemeInit");
+			$('#header').addClass("elemFixed").data("top", $('#header').offset().top);
+			$('#menu').removeClass("menuBack");
+			$('#menu').addClass("menuFixed").data("top", $('#menu').offset().top);
+			
+		} 
+		else if ($('#header').hasClass("elemFixed") && ($(window).scrollTop() < 40)) {
+			$('#header').removeClass("elemFixed");
+			$('#header').addClass("elemeInit")
+			$('#menu').removeClass("menuFixed");
+			$('#menu').addClass("menuBack")
+		}
+	});
+</script>
+

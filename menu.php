@@ -19,42 +19,9 @@
 	    </div>
     </div>
 
-
 <script>
 	$(function(){
 		$('#menu').slicknav();
 	});
 </script>
-<script>
-
-	/*$(window).scroll(function() {
-		if(!$('#menu').hasClass("menuFixed") && ($(window).scrollTop() > $('#menu').offset().top)) {
-			$('#menu').removeClass("menuBack");
-			$('#menu').addClass("menuFixed").data("top", $('#menu').offset().top);
-
-		} 
-		else if ($('#menu').hasClass("menuFixed") && ($(window).scrollTop() < $('#menu').data("top"))) {
-			$('#menu').removeClass("menuFixed");
-			$('#menu').addClass("menuBack")
-		}
-	});*/
-
-	$(window).scroll(function() {
-		if(!$('#header').hasClass("elemFixed") && ($(window).scrollTop() > $('#header').offset().top)) {
-			$('#header').removeClass("elemeInit");
-			$('#header').addClass("elemFixed").data("top", $('#header').offset().top);
-			$('#menu').removeClass("menuBack");
-			$('#menu').addClass("menuFixed").data("top", $('#menu').offset().top);
-			
-		} 
-		else if ($('#header').hasClass("elemFixed") && ($(window).scrollTop() < $('#header').data("top"))) {
-			$('#header').removeClass("elemFixed");
-			$('#header').addClass("elemeInit")
-			$('#menu').removeClass("menuFixed");
-			$('#menu').addClass("menuBack")
-		}
-	});
-</script>
-
-
 <?php include("fonctionsPHP/fonctionEspace.php");
