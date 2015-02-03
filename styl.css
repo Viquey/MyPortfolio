@@ -195,14 +195,15 @@ div.cara {
 
 /* ---------- Header ---------- */
 
+
+
 #header {
     width: 100%;
-    height: 75px;
     background-color: #fff;
 }
 
 #header_in {
-    width: 960px;
+    /*width: 960px;*/
     padding: 0px 10px 0 10px;
     height: 75px;
     margin: auto;
@@ -229,29 +230,28 @@ div.cara {
     /* ----- Menu ----- */
     
     #menu {
-	position: absolute;
-	right: 00px;
-	font-size: 95%;
-	background: url('img/menu_cut.jpg') no-repeat scroll right;
-	margin-right: 0px;
+	/*background: url('img/menu_cut.jpg') no-repeat scroll right;*/
+	padding: 0; 
+	margin: 0;
     }
-    
-    
+
+
     #menu ul li {
 	float: left;
-	display: inline;
+	display: inline-block;
     }
     
-    #menu ul li a {
+    .menuBack ul li a {
 	text-decoration: none;
 	color: #101115;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 1px;
-	display: block;
+	display: inline-block;
 	padding: 29px 40px 0 40px;
 	height: 46px;
 	background-color: #fff;
+	margin: 0 2px;
     }
     
     #menu ul li a:hover {
@@ -259,12 +259,74 @@ div.cara {
     }
     
     #menu ul li a.active {
-	background: none;
+	background: black;
 	color: #fff;
     }
     
     
-    /* --- */
+    /* surcharge */
+
+    #menu ul .cheatBann a.active {
+	background-color: black;
+	color: white;
+	}
+
+	.menuFixed {
+	position: fixed;
+	z-index: 10;
+	margin-left: 270px;
+
+	}
+
+	.menuBack {
+		font-size: 95%;
+		margin-right: 0px;
+		margin-left: 270px;
+	}
+
+	
+
+	.elemFixed {
+		position: fixed;
+		z-index: 10;
+		height: 40px;
+		border-bottom-style: solid;
+		border-bottom-color: black;
+		border-bottom-width: 3px;
+	}
+
+	.elemInit {
+		position: inital;
+		height: 75px;
+	}
+
+	.elemFixed #menu ul li a {
+	text-decoration: none;
+	color: #101115;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px 40px 10px 40px;
+	background-color: #fff;
+	margin: 0 20px;
+	}
+
+	.elemFixed #menu ul li a.active {
+		background-color: black;
+		color: white;
+		border-bottom-color: white;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+
+	.elemFixed #logo {
+		display: none;
+	}
+
+
+
+	
 
 
 /* ---------- Main part (slider) ---------- */
