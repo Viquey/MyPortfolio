@@ -92,7 +92,12 @@
 	            </div>
 	            
 	            <div class="contactinfo">
-	                <span class="ico_message"><b>sellathurai.vyach@yahoo.fr</b></span>    
+	            	<script language=JavaScript>
+						function adrMail(domaine, prenom, suffx, nom) {
+			  				document.write(nom+"."+prenom+"@"+domaine+"."+suffx);
+						}
+					</script>
+	                <span class="ico_message"><b><script language=javascript>adrMail("y<!-- 11X4sdu -->aho<!-- 11X4sdu -->o", "vy<!-- b4kLds7SD -->ach", "f<!-- 11X4sdu -->r", "sel<!-- 11X4sdu -->lath<!-- 11X4sdu -->urai");</script></b></span>    
 	            </div>
 	            
 	            <div class="contactinfo">
@@ -117,6 +122,8 @@
 	    
 	    
 	    <!-- *********  Footer  ********** -->
+
+	    
 	    
 	    <?php include('footer.php');?>
 	<script language="JavaScript">
